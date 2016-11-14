@@ -27,11 +27,36 @@ public class GUI_Test_de_Personalidad extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        pregunta1 = new javax.swing.ButtonGroup();
+        pregunta2 = new javax.swing.ButtonGroup();
+        pregunta3 = new javax.swing.ButtonGroup();
+        pregunta4 = new javax.swing.ButtonGroup();
+        pregunta5 = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        panel_pregunta1 = new javax.swing.JPanel();
+        rbnSI_pregunta1 = new javax.swing.JRadioButton();
+        rbnNO_pregunta1 = new javax.swing.JRadioButton();
+        panel_pregunta2 = new javax.swing.JPanel();
+        rbnOP1_pregunta2 = new javax.swing.JRadioButton();
+        rbnOP2_pregunta2 = new javax.swing.JRadioButton();
+        rbnOP3_pregunta2 = new javax.swing.JRadioButton();
+        rbnOP4_pregunta2 = new javax.swing.JRadioButton();
+        panel_pregunta3 = new javax.swing.JPanel();
+        rbnSI_pregunta3 = new javax.swing.JRadioButton();
+        rbnNO_pregunta3 = new javax.swing.JRadioButton();
+        panel_pregunta4 = new javax.swing.JPanel();
+        rbnSI_pregunta4 = new javax.swing.JRadioButton();
+        rbnNO_pregunta4 = new javax.swing.JRadioButton();
+        panel_pregunta5 = new javax.swing.JPanel();
+        rbnSI_pregunta5 = new javax.swing.JRadioButton();
+        rbnNO_pregunta5 = new javax.swing.JRadioButton();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -46,7 +71,7 @@ public class GUI_Test_de_Personalidad extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("¡ATENCION!");
+        jLabel1.setText("¡ESPERA!");
 
         jLabel2.setText("Antes de continuar con el programa necesitamos conocerte un poco mas");
 
@@ -55,6 +80,157 @@ public class GUI_Test_de_Personalidad extends javax.swing.JFrame {
         jLabel4.setText("¿Sueles viajar frecuentemente?");
 
         jLabel5.setText("¿Que prefieres hacer con tu tiempo?");
+
+        jLabel6.setText("¿Juzgas un libro por su portada?");
+
+        jLabel7.setText("¿Estás de acuerdo con la frase: \"Mas vale lo viejo conocido que lo nuevo por conocer\"?");
+
+        jLabel8.setText("¿Confías en las compras en línea?");
+
+        pregunta1.add(rbnSI_pregunta1);
+        rbnSI_pregunta1.setText("SI");
+
+        pregunta1.add(rbnNO_pregunta1);
+        rbnNO_pregunta1.setText("NO");
+
+        javax.swing.GroupLayout panel_pregunta1Layout = new javax.swing.GroupLayout(panel_pregunta1);
+        panel_pregunta1.setLayout(panel_pregunta1Layout);
+        panel_pregunta1Layout.setHorizontalGroup(
+            panel_pregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_pregunta1Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(rbnSI_pregunta1)
+                .addGap(18, 18, 18)
+                .addComponent(rbnNO_pregunta1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        panel_pregunta1Layout.setVerticalGroup(
+            panel_pregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_pregunta1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panel_pregunta1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbnSI_pregunta1)
+                    .addComponent(rbnNO_pregunta1))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        pregunta2.add(rbnOP1_pregunta2);
+        rbnOP1_pregunta2.setText("Jugar videojuegos");
+
+        pregunta2.add(rbnOP2_pregunta2);
+        rbnOP2_pregunta2.setText("Ver películas y fotos");
+
+        pregunta2.add(rbnOP3_pregunta2);
+        rbnOP3_pregunta2.setText("Salir con amigos");
+
+        pregunta2.add(rbnOP4_pregunta2);
+        rbnOP4_pregunta2.setText("Terminar tareas/trabajos");
+
+        javax.swing.GroupLayout panel_pregunta2Layout = new javax.swing.GroupLayout(panel_pregunta2);
+        panel_pregunta2.setLayout(panel_pregunta2Layout);
+        panel_pregunta2Layout.setHorizontalGroup(
+            panel_pregunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_pregunta2Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(panel_pregunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(rbnOP4_pregunta2)
+                    .addComponent(rbnOP3_pregunta2)
+                    .addComponent(rbnOP2_pregunta2)
+                    .addComponent(rbnOP1_pregunta2))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        panel_pregunta2Layout.setVerticalGroup(
+            panel_pregunta2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_pregunta2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(rbnOP1_pregunta2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(rbnOP2_pregunta2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(rbnOP3_pregunta2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(rbnOP4_pregunta2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        pregunta3.add(rbnSI_pregunta3);
+        rbnSI_pregunta3.setText("SI");
+
+        pregunta3.add(rbnNO_pregunta3);
+        rbnNO_pregunta3.setText("NO");
+
+        javax.swing.GroupLayout panel_pregunta3Layout = new javax.swing.GroupLayout(panel_pregunta3);
+        panel_pregunta3.setLayout(panel_pregunta3Layout);
+        panel_pregunta3Layout.setHorizontalGroup(
+            panel_pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_pregunta3Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(rbnSI_pregunta3)
+                .addGap(18, 18, 18)
+                .addComponent(rbnNO_pregunta3)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+        panel_pregunta3Layout.setVerticalGroup(
+            panel_pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_pregunta3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panel_pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbnSI_pregunta3)
+                    .addComponent(rbnNO_pregunta3)))
+        );
+
+        pregunta4.add(rbnSI_pregunta4);
+        rbnSI_pregunta4.setText("SI");
+
+        pregunta4.add(rbnNO_pregunta4);
+        rbnNO_pregunta4.setText("NO");
+
+        javax.swing.GroupLayout panel_pregunta4Layout = new javax.swing.GroupLayout(panel_pregunta4);
+        panel_pregunta4.setLayout(panel_pregunta4Layout);
+        panel_pregunta4Layout.setHorizontalGroup(
+            panel_pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_pregunta4Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(rbnSI_pregunta4)
+                .addGap(18, 18, 18)
+                .addComponent(rbnNO_pregunta4)
+                .addContainerGap(36, Short.MAX_VALUE))
+        );
+        panel_pregunta4Layout.setVerticalGroup(
+            panel_pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_pregunta4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panel_pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbnSI_pregunta4)
+                    .addComponent(rbnNO_pregunta4)))
+        );
+
+        pregunta5.add(rbnSI_pregunta5);
+        rbnSI_pregunta5.setText("SI");
+
+        pregunta5.add(rbnNO_pregunta5);
+        rbnNO_pregunta5.setText("NO");
+
+        javax.swing.GroupLayout panel_pregunta5Layout = new javax.swing.GroupLayout(panel_pregunta5);
+        panel_pregunta5.setLayout(panel_pregunta5Layout);
+        panel_pregunta5Layout.setHorizontalGroup(
+            panel_pregunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_pregunta5Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(rbnSI_pregunta5)
+                .addGap(18, 18, 18)
+                .addComponent(rbnNO_pregunta5)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        panel_pregunta5Layout.setVerticalGroup(
+            panel_pregunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_pregunta5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panel_pregunta5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbnSI_pregunta5)
+                    .addComponent(rbnNO_pregunta5))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -66,13 +242,23 @@ public class GUI_Test_de_Personalidad extends javax.swing.JFrame {
                         .addGap(222, 222, 222)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(86, 86, 86)
+                        .addGap(48, 48, 48)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3)
                             .addComponent(jLabel2)
                             .addComponent(jLabel4)
-                            .addComponent(jLabel5))))
-                .addContainerGap(112, Short.MAX_VALUE))
+                            .addComponent(jLabel5)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(panel_pregunta2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(panel_pregunta1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel7)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(panel_pregunta5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(panel_pregunta4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(panel_pregunta3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -85,9 +271,25 @@ public class GUI_Test_de_Personalidad extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addGap(38, 38, 38)
                 .addComponent(jLabel4)
-                .addGap(57, 57, 57)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panel_pregunta1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
-                .addContainerGap(189, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panel_pregunta2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panel_pregunta3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panel_pregunta4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(panel_pregunta5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
         pack();
@@ -134,6 +336,31 @@ public class GUI_Test_de_Personalidad extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel panel_pregunta1;
+    private javax.swing.JPanel panel_pregunta2;
+    private javax.swing.JPanel panel_pregunta3;
+    private javax.swing.JPanel panel_pregunta4;
+    private javax.swing.JPanel panel_pregunta5;
+    private javax.swing.ButtonGroup pregunta1;
+    private javax.swing.ButtonGroup pregunta2;
+    private javax.swing.ButtonGroup pregunta3;
+    private javax.swing.ButtonGroup pregunta4;
+    private javax.swing.ButtonGroup pregunta5;
+    private javax.swing.JRadioButton rbnNO_pregunta1;
+    private javax.swing.JRadioButton rbnNO_pregunta3;
+    private javax.swing.JRadioButton rbnNO_pregunta4;
+    private javax.swing.JRadioButton rbnNO_pregunta5;
+    private javax.swing.JRadioButton rbnOP1_pregunta2;
+    private javax.swing.JRadioButton rbnOP2_pregunta2;
+    private javax.swing.JRadioButton rbnOP3_pregunta2;
+    private javax.swing.JRadioButton rbnOP4_pregunta2;
+    private javax.swing.JRadioButton rbnSI_pregunta1;
+    private javax.swing.JRadioButton rbnSI_pregunta3;
+    private javax.swing.JRadioButton rbnSI_pregunta4;
+    private javax.swing.JRadioButton rbnSI_pregunta5;
     // End of variables declaration//GEN-END:variables
 }
