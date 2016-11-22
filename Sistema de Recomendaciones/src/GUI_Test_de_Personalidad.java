@@ -88,6 +88,7 @@ public class GUI_Test_de_Personalidad extends javax.swing.JFrame {
         jLabel8.setText("¿Confías en las compras en línea?");
 
         pregunta1.add(rbnSI_pregunta1);
+        rbnSI_pregunta1.setSelected(true);
         rbnSI_pregunta1.setText("SI");
 
         pregunta1.add(rbnNO_pregunta1);
@@ -115,6 +116,7 @@ public class GUI_Test_de_Personalidad extends javax.swing.JFrame {
         );
 
         pregunta2.add(rbnOP1_pregunta2);
+        rbnOP1_pregunta2.setSelected(true);
         rbnOP1_pregunta2.setText("Jugar videojuegos");
 
         pregunta2.add(rbnOP2_pregunta2);
@@ -154,6 +156,7 @@ public class GUI_Test_de_Personalidad extends javax.swing.JFrame {
         );
 
         pregunta3.add(rbnSI_pregunta3);
+        rbnSI_pregunta3.setSelected(true);
         rbnSI_pregunta3.setText("SI");
 
         pregunta3.add(rbnNO_pregunta3);
@@ -180,6 +183,7 @@ public class GUI_Test_de_Personalidad extends javax.swing.JFrame {
         );
 
         pregunta4.add(rbnSI_pregunta4);
+        rbnSI_pregunta4.setSelected(true);
         rbnSI_pregunta4.setText("SI");
 
         pregunta4.add(rbnNO_pregunta4);
@@ -206,6 +210,7 @@ public class GUI_Test_de_Personalidad extends javax.swing.JFrame {
         );
 
         pregunta5.add(rbnSI_pregunta5);
+        rbnSI_pregunta5.setSelected(true);
         rbnSI_pregunta5.setText("SI");
 
         pregunta5.add(rbnNO_pregunta5);
