@@ -19,6 +19,15 @@ public class Cliente {
     public Cliente() {
     }
 
+    public Cliente(boolean viaja, boolean apariencia, boolean compras_online, String actividades, boolean experiencia) {
+        this.viaja = viaja;
+        this.apariencia = apariencia;
+        this.compras_online = compras_online;
+        this.actividades = actividades;
+        this.experiencia = experiencia;
+    }
+    
+
     
     
     public void setViaja(boolean viaja) {
