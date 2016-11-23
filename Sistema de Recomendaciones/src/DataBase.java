@@ -77,7 +77,7 @@ con.close();
         
     }
  public void createGrafoPCArmadas(){
-        String csvFile = "/Users/Diego/Documents/NetBeansProjects/neo4jprueba/datos.csv"; //cambiar esto con la location del archivo datos.csv
+        String csvFile = "C:\\Users\\Diego\\Documents\\UVG\\Algoritmos y Estructuras de datos\\proyectoSR\\computadoras.txt"; //cambiar esto con la location del archivo datos.csv
         BufferedReader br = null;
         String line ="";
         ArrayList<String> computadoras = new ArrayList();
@@ -85,9 +85,7 @@ con.close();
         try {
             br = new BufferedReader(new FileReader(csvFile));
             while ((line = br.readLine()) != null) {
-                // use punto coma as separator
-                computadoras.add(line);
-               
+                computadoras.add(line);    
                 }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -101,21 +99,27 @@ con.close();
                     e.printStackTrace();
                 }
             }
-        }        
-     try {
+        }
+        try {
             //la siguiente linea se debe modificar con el user y el password de neo4j
                     Connection con = DriverManager.getConnection("jdbc:neo4j:bolt://localhost/?user=neo4j,password=123,debug=true,noSsl,flatten=[-1,100,1000]"); 
                     try (Statement stmt = con.createStatement()) {
                         stmt.executeQuery("match (n) detach \n delete n");
-                        for (String s : computadoras){
+                        for (String s: computadoras){
                             String[] temp = s.split(", ");
-                            //agregar aqui el create con cypher
-                        }
+                            String brand = String.format("\"%s\"", temp[0]);
+                            String name = String.format("\"%s\"", temp[1]);
+                            double weight = Double.parseDouble(temp[2]);
+                            String use = String.format("\"%s\"", temp[3]);
+                            int price = Integer.parseInt(temp[4]);
+                            stmt.executeQuery("CREATE (n: Laptop {marca: "+brand+", nombre: "+name+", peso: "+weight+", uso: "+use+", precio: "+price+"})" );
+                    }
                     }
                     con.close();
                 }catch (Exception ex){
-                    ex.printStackTrace();
-                }    
-    }   
+                    System.out.println("no funciona"+line);
+                    }
+        
+}
 }
 
