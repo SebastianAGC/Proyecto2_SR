@@ -591,7 +591,23 @@ public class GUI_Test_de_Personalidad extends javax.swing.JFrame {
             }
         }
         elclient = new Cliente(rbnSI_pregunta1.isSelected(), rbnSI_pregunta3.isSelected(), rbnSI_pregunta5.isSelected(), uso, rbnSI_pregunta4.isSelected());
+        try {
+            //la siguiente linea se debe modificar con el user y el password de neo4j
+                    Connection con = DriverManager.getConnection("jdbc:neo4j:bolt://localhost/?user=neo4j,password=123,debug=true,noSsl,flatten=[-1,100,1000]"); 
+                    try (Statement stmt = con.createStatement()) {
+                        String usoL = String.format("\"%s\"", elclient.getActividades());
+                        String id = String.format("\"%s\"", "Cliente");
+                        stmt.executeQuery("CREATE (n: Usuario {name: "+id+"})");
+                        stmt.executeQuery("match (n: Usuario)"
+                                            + "match (m: activity {name: "+usoL+"})"
+                                + "create (n)-[:LIKES]->(m)");
+                    }
+                    con.close();
+                }catch (Exception ex){
+                    ex.printStackTrace();
+                    }
         jTabbedPane2.setSelectedIndex(1);
+        
     }//GEN-LAST:event_jContinuarActionPerformed
 
     /**
