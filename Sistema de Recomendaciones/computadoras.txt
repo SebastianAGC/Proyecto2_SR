@@ -1,0 +1,20 @@
+HP, A10-9600P, 6.0, regular, 379
+Acer, Chromebook, 4.8, regular, 229
+Acer, Aspire ES15, 5.3, regular, 299
+Asus, Aurora, 2.2, regular, 199
+Dell, Inspiron, 4.85, regular, 299
+Razer, Blade Stealth, 2.84, regular, 1399
+Dell, XPS 13, 2.85, regular, 1449
+Apple, MacBook Air, 3.0, diseno, 719
+Apple, MacBook, 3.24, diseno, 1200
+Apple, MacBoook Retina, 4.0, diseno, 1050
+Apple, MacBook Pro, 4.54, diseno, 897
+Asus, ZenBook, 2.9, diseno, 739
+Acer, Aspire V15 Nitro, 5.1, diseno, 947
+MSI, GS63VR Stealth Pro, 8.4, gaming, 1939
+Asus, ROG GL752VW-DH71, 6.6, gaming, 1121
+Asus, ROG GL502VS-DB71, 4.9, gaming, 1649
+Razer, Blade, 4.85, gaming, 1399
+Dell, AW15R3-10881SLV, 8.0, gaming, 2470
+Dell, Inspiron 15 7000 series, 5.9, gaming, 699
+Lenovo, Y700, 5.72, gaming, 879
